@@ -1,0 +1,5 @@
+{"id":"log_001","timestamp":"2024-01-15T10:30:45Z","level":"INFO","service":"api-server","message":"服务启动成功","host":"prod-server-01","ip":"192.168.1.10"}
+{"id":"log_002","timestamp":"2024-01-15T10:35:12Z","level":"WARNING","service":"database","message":"连接池使用率达到85%","host":"prod-db-01","ip":"192.168.1.20","details":{"current_connections":850,"max_connections":1000}}
+{"id":"log_003","timestamp":"2024-01-15T10:40:33Z","level":"ERROR","service":"cache","message":"Redis连接失败","host":"prod-cache-01","ip":"192.168.1.30","error_code":"CONN_TIMEOUT"}
+{"id":"log_004","timestamp":"2024-01-15T10:45:01Z","level":"INFO","service":"load-balancer","message":"负载均衡器健康检查通过","host":"prod-lb-01","ip":"192.168.1.40","status":"healthy"}
+{"id":"log_005","timestamp":"2024-01-15T10:50:22Z","level":"CRITICAL","service":"disk-monitor","message":"磁盘使用率超过95%","host":"prod-server-02","ip":"192.168.1.50","details":{"disk":"/dev/sda1","usage_percent":96.5}}
