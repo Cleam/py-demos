@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import sys
 
 # sys.argv 是一个列表，存放了你输入的命令行参数
