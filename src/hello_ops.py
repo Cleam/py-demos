@@ -15,3 +15,10 @@ if sys_info == "Linux":
     print("检测到Linux环境，运行正常")
 else:
     print("当前环境非Linux，部分功能可能受限")
+
+
+# log_path = "/var/log/syslog"
+# with open(log_path, "r") as f:
+#     logs = f.readlines()
+#     print(f"最近的系统日志：{logs[-5:]}")
+
