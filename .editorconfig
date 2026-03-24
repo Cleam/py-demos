@@ -1,0 +1,44 @@
+# 写一份标准的python格式要求
+# 1. 使用4个空格进行缩进，不使用制表符（Tab）。
+# 2. 每行代码的长度不超过79个字符。
+# 3. 使用空行分隔函数和类定义，以及较长的代码块
+# 4. 使用小写字母和下划线命名变量和函数（snake_case）。
+# 5. 使用大写字母和下划线命名常量（UPPER_SNAKE_CASE）。
+# 6. 使用驼峰命名法（CamelCase）命名类。
+# 7. 在函数和类定义前添加文档字符串（docstring）来描述它们的功能和用法。
+# 8. 使用空格围绕二元运算符（如=、+、-、*、/）和逗号，但不要在函数调用的括号内使用空格。
+# 9. 在文件开头添加一个shebang行（#!）来指定Python解释器的路径。
+
+# EditorConfig is awesome: https://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,py}]
+charset = utf-8
+
+# 4 space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# Indentation override for all JS under lib directory
+[lib/**.js]
+indent_style = space
+indent_size = 2
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
